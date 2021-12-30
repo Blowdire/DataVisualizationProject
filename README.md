@@ -14,8 +14,6 @@ https://datavizproject.com/data-type/pictorial-fraction-chart/
 
 https://datavizproject.com/data-type/fraction-of-pictograms/
 
-probabile su Tableau
-
 **2**
 
 sankey diagram;
