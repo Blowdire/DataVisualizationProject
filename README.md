@@ -1,5 +1,12 @@
 # DataVisualizationProject
 
+link utili:
+
+- https://public.tableau.com/app/profile/giulia4515/viz/Netflixsdevelopmentovertime/Netflixsdevelopmentovertime
+- https://rpubs.com/fadhlanrh/Netflix
+- https://github.com/280220/Netflix-Trend-Analysis/blob/main/Netflix%20Trends%20Analyis.ipynb
+- https://www.analyticsvidhya.com/blog/2021/09/performing-eda-of-netflix-dataset-with-plotly/
+
 idee:
 
 classici: violin plot, scatter plot
