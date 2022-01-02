@@ -11,6 +11,11 @@ idee:
 
 classici: violin plot, scatter plot
 
+per salvare figure con dpi:
+
+- https://www.kite.com/python/answers/how-to-save-images-at-very-high-quality-in-python
+- https://stackoverflow.com/questions/54001029/how-to-change-the-dpi-or-density-when-saving-images-using-pil
+
 **1**
 
 pictorial fraction chart;
