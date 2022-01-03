@@ -7,14 +7,22 @@ link utili:
 - https://github.com/280220/Netflix-Trend-Analysis/blob/main/Netflix%20Trends%20Analyis.ipynb
 - https://www.analyticsvidhya.com/blog/2021/09/performing-eda-of-netflix-dataset-with-plotly/
 
-idee:
-
-classici: violin plot, scatter plot
-
 per salvare figure con dpi:
 
 - https://www.kite.com/python/answers/how-to-save-images-at-very-high-quality-in-python
 - https://stackoverflow.com/questions/54001029/how-to-change-the-dpi-or-density-when-saving-images-using-pil
+
+idee:
+
+classici: violin plot, scatter plot
+
+- waffle numero di film vs numero serie tv
+- waffle target ages
+- correlazione durata film e anni
+- bar chart delta num film num serie tv
+- violin target ages e durata
+- line chart date added
+- country
 
 **1**
 
