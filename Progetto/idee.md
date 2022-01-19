@@ -1,3 +1,7 @@
+IMDb datasets info
+
+https://www.imdb.com/interfaces/
+
 # Idee
 
 - linea temporale con durata media film negli anni, con context come ad esempio 'introduzione tecnologia x', 'introduzione streaming', ecc.
