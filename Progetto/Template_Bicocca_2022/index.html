@@ -71,7 +71,7 @@
       <!-- Prima Visualizzazione -->
       <div class="container">
         <div class="row justify-content-center">
-          <img src="./media/waffle_cut.png" style="width: 650px; height:700px; margin-left:15%"/>
+          <img src="./media/waffle_cut.png" style="width: 650px; height:700px; margin-left:20%"/>
           <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
           Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
         </div>
@@ -85,7 +85,8 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h5>Esplorazione dati Film 2021</h5>
-            <p>Un'ulteriore esplorazione dei dati è stata fatta realizzando un violin plot e andando a considerare il numero di voti ricevuti dai film del 2021.</p>
+            <p>Un'ulteriore esplorazione dei dati è stata fatta realizzando un violin plot e andando a considerare la durata in minuti dei film del 2021,
+              per assicurarci di avere una buona distribuzione di film da mostrare in seguito.</p>
             
           </div>
         </div>
@@ -95,8 +96,10 @@
       <!-- Seconda Visualizzazione -->
       <div class="container viz">
         <div class="row">
+          
           <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
           Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
+          <embed type="text/html" src="./violin.html" width="1140" height="700" />
         </div>
       </div>
 
@@ -112,7 +115,10 @@
               Come si può notare dallo scatter plot c'è una leggera correlazione, il valore di correlazione corrisponde a <i>0.4</i>, fra la durata in minuti e il rating ottenuto. In particolare
               la correlazione è contraria a quella che ci aspettavamo inizialmente, ovvero che all'aumentare dei minuti il rating medio dei Film
               aumenta leggermente.
-            </p>          
+            </p>     
+            <p>L'area dei punti indicano il numero di voti ottenuti su IMDb. Le dimensioni sono calcolate base all'area e non in base al diametro. Le righe grigie rappresentano
+              rispettivamente la media dei valori sui due assi, mentre le fasce azzurre rappresentano la deviazione standard dei valori sui due assi.
+            </p>     
           </div>
         </div>
       </div>
@@ -120,9 +126,12 @@
 
       <!-- Terza Visualizzazione -->
       <div class="container viz">
+        <h3 style="text-align: center;">Il rating medio non diminuisce all'aumentare dei minuti.</h3>
         <div class="row">
           <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
           Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
+          <embed type="text/html" src="./scatter.html" width="1140" height="700" style="margin-left: 20%;" />
+
         </div>
       </div>
 
@@ -133,11 +142,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <h5>titoletto opzionale</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h5>Conclusioni</h5>
+            <p>In conclusione le aspettative iniziali riguardannti l'obiettivo del progetto sono state ribaltate: inizialmente pensavamo che all'aumentare dei minuti 
+              di un film il rating peggiorasse; invece, come si può notare dallo scatter plot, all'aumentare della durata del film il rating tende a salire leggermente.
             </p>
+            
           </div>
         </div>
       </div>
@@ -152,23 +161,44 @@
 
               <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
               <h5>Note Metodologiche</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Il processo di raccolta dati è avvenuto scaricando i dataset dal sito web di IMDb. <br />
+                Il processo di pulizia dei dati è avvenuto tramite analisi effettuate utilizzando le librerie <i>Pandas</i> e <i>Numpy</i>.<br />
+                Per la pulizia dati sono stati tolti dal dataset i film non del 2021, con pochi voti ottenuti, 
+                con durata in minuti pari a 0 e con altri eventuali valori mancanti. <br />
+                La prima visualizzazione consiste in una rappresentazione visiva della percentuale di film all'interno del dataset, la seconda rappresenta
+                la distribuzione della durata in minuti dei film del 2021, dopo che sono stati filtrati, mentre l'utlima visualizzazione è uno scatter plot che
+                mette in relazione la durata in minuti e il rating ottenuto dai film. Le righe grigie rappresentano la media del rating dei film e della durata dei film,
+                le fasce azzurre rappresentano la deviazione standard del rating dei film e della durata dei film.
+              
+              </p>
 
               <hr>
 
               <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
               <h5>Valutazione qualità</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              <p>La valutazione della qualità è stata effettuata coinvolgendo 3 persone per le considerazioni euristiche, 6 per il test utente e 12 per il questionario psicometrico. </p>
 
               <hr>
 
               <h5>Euristiche considerate</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>In seguito ai test sottoposti alle 3 persone, sono emerse le seguenti considerazioni: 
+                <ul><li>Le frecce erano inizialmente troppo piccole, sono state quindi rese più grandi.</li>
+                  <li>Posizionandosi su un punto dello scatter plot l'informazione riguardante la media dei voti presenta troppe cifre decimali pari a zero.</li>
+                  <li>Alcuni punti dello scatter plot sono sovrapposti quando la visualizzazione non è zoommata.</li>
+                </ul>.</p>
 
               <hr>
 
               <h5>Test Utente</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Per il test utente sono state considerate le seguenti domande:
+                <ul><li>
+                  Qual è il valore massimo di rating dei film considerati? (tempo stimato: 4s)
+                </li>
+                <li>Il film <i>Zack Snyder's Justice league</i> è un outlier? (tempo stimat0: 7s)</li>
+                <li>Qual è la durata minima fra i film considerati? (tempo stimato: 12 s)</li>
+                <li>Il film <i>The cost of deception</i> è nella fascia di normalità del rating? (tempo stimato: 4s)</li>
+              </ul>
+              </p>
 
               <hr>
 
@@ -188,13 +218,17 @@
             <!-- Inserire i link di google spreadsheet/drive o i link ai file dentro la cartella data (ridotti possibilmente - max 5mb) al posto di # e dare un nome ai dataset.-->
             <div class="col-md-3 col-md-offset-1 howToSide">
             <h5>Dati utilizzati</h5>
-            <p><a href="#">Nome e link al dataset</a></p>
-            <p><a href="#">Nome e link al dataset</a></p>
+            <p><a href="https://datasets.imdbws.com/">Dataset IMBd</a></p>
 
             <!-- Inserire i link agli strumenti utilizzati per la gestione dei dati e per la visualizzazione-->
             <h5 id="tools">Strumenti utilizzati</h5>
-            <p><a href="#">Nome e link al tool</a></p>
-            <p><a href="#">Nome e link al tool</a></p>
+            <p><a href="https://www.python.org/">Python</a></p>
+            <p><a href="https://bokeh.org/">Bokeh</a></p>
+            <p><a href="https://plotly.com/">Plotly</a></p>
+            <p><a href="https://pypi.org/project/pywaffle/">PyWaffle</a></p>
+            <p><a href="https://matplotlib.org/">MatPlotLib</a></p>
+            <p><a href="https://pandas.pydata.org/">Pandas</a></p>
+            <p><a href="https://numpy.org/">Numpy</a></p>
             </div>
           </div>
         </div>
