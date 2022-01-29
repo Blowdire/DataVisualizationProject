@@ -59,8 +59,26 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h5>Introduzione</h5>
-            <p>In una realtà come quella di oggi, in cui si producono sempre più contenuti digitali per un pubblico sempre più ampio che reagisce prestando sempre meno attenzione alle informazioni che riceve e caratterizzata dall'avvento di canzoni più brevi e serie TV, è vero che le persone preferiscono anche film più brevi?
-              Questa considerazione ci ha guidati nella realizzazione di questo progetto e ci ha permesso di determinare la seguente domanda di ricerca: i film più brevi ricevono generalmente voti migliori?</p>
+            <p>Nella società odierna, i servizi e i prodotti, specialmente quelli digitali ma non solo, competono per ottenere l'attenzione degli utenti in misura sempre maggiore. I social media, ad esempio, hanno proprio l'obiettivo di far trascorrere il maggiore tempo possibile agli utenti sulle proprie piattaforme.
+              In generale, vi è una sensazione condivisa di avere tempo sempre più limitato, a causa del bombardamento di informazioni a cui siamo sottoposti, la rapida crescita delle informazioni disponibili causa un depotenziamento dell'attenzione. Molti esperti sostengono che oggi il fattore limitante non è più l'informazione, ma proprio l'attenzione.<a href="https://blog.advmedialab.com/attention-economy#influenza-utenti">[1]</a>
+            </p>
+            <p>La tendenza citata è rinvenibile anche nel mondo della musica, caratterizzato da canzoni sempre più brevi e costruite in modo da catturare nell'immediato l'attenzione del consumatore.
+              Secondo un'analisi condotta dal data scientist Michael Tauberg, questo trend è osservabile da almeno due decadi, indipendentemente dal genere musicale.
+              La mediana corrispondente alla durata delle canzoni nella famosa classifica Billboard Hot 100 è scesa da oltre quattro minuti nel 2000 ad una durata di circa tre minuti e mezzo nel 2018.
+              Nell'ultimo periodo inoltre, il numero di canzoni nella stessa classifica di durata inferiore ai due minuti e trenta è aumentato dall'1% nel 2015 ad oltre il 6% nel 2018.  
+              Tra le cause principale possiamo trovare sicuramente l'avvento dello streaming, ma possiamo concludere che anche nel mondo della musica, gli artisti 'combattono' l'attention span attraverso la produzione di canzoni più brevi.<a href="https://qz.com/quartzy/1438412/the-reason-why-your-favorite-pop-songs-are-getting-shorter/">[2]</a>
+            </p>
+            <p>Nel mondo cinematografico è invece indiscutibile la crescita esponenziale avvenuta nella produzione di serie tv negli ultimi anni.
+              Basta prendere le serie tv presenti nel dataset selezionato, raggrupparle per anno di uscita e osservare come si passi dalle 3500 del 2003, alle oltre 10000 del 2020.
+            </p>
+            <p>I video sono diventati uno dei campi di battaglia più battuti per catturare l'attenzione degli acquirenti, scatenando una vera e propria corsa agli investimenti tra le aziende di media e comunicazioni.
+              Diverse aziende stanno effettuando enormi investimenti per costruire nuove piattaforme streaming di tipo D2C (direct-to-consumer), come ad esempio Disney di recente con Disney +.
+              Ma la concorrenza per l'attenzione degli acquirenti si estende oltre il solito ambito dello streaming. Un'ampia gamma di concorrenti (detti “attention challengers”), tra cui compaiono i social media e le società di gaming, stanno catturando in misura sempre più ampia l'attenzione degli acquirenti.<a href="https://blog.advmedialab.com/attention-economy#influenza-utenti">[1]</a>
+            </p>
+            <p>Dunque, in una realtà come quella odierna, in cui si producono sempre più contenuti digitali per un pubblico sempre più ampio che reagisce prestando sempre meno attenzione alle informazioni che riceve, e caratterizzata tra le altre cose dalla rapida diffusione delle serie TV in ambito cinematografico,
+              è vero che le persone preferiscono anche film più brevi? Questa considerazione ci ha guidati nella realizzazione di questo progetto e ci ha permesso di determinare la seguente domanda di ricerca: i film più brevi ricevono generalmente voti migliori?</p>
+            <!-- <p>In una realtà come quella di oggi, in cui si producono sempre più contenuti digitali per un pubblico sempre più ampio che reagisce prestando sempre meno attenzione alle informazioni che riceve e caratterizzata dall'avvento di canzoni più brevi e serie TV, è vero che le persone preferiscono anche film più brevi?
+              Questa considerazione ci ha guidati nella realizzazione di questo progetto e ci ha permesso di determinare la seguente domanda di ricerca: i film più brevi ricevono generalmente voti migliori?</p> -->
             <h5>Obiettivo della visualizzazione</h5>
             <p>L'obiettivo della visualizzazione consiste dunque nell'indagare la correlazione esistente tra il rating dei film e la loro durata, dati entrambi ottenuti dal sito ufficiale di IMDb.</p>
           </div>
@@ -123,9 +141,9 @@
           <div class="col-md-8 col-md-offset-2">
             <h5>Visualizzazione finale</h5>
             <p>La visualizzazione consiste in uno scatter plot avente sull'asse x la durata in minuti dei film e sull'asse y la media dei voti ottenuti su IMDb. 
-              Come si può notare dallo scatter plot c'è una leggera correlazione, il valore di correlazione corrisponde a <i>0.4</i>, fra la durata in minuti e il rating ottenuto. In particolare
-              la correlazione è contraria a quella che ci aspettavamo inizialmente, ovvero che all'aumentare dei minuti il rating medio dei Film
-              aumenta leggermente.
+              Come si può notare dallo scatter plot è presenta una leggera correlazione positiva, il cui valore corrisponde a <i>0.4</i>
+              La correlazione visualizzata sembra constrastare l'idea iniziale per cui all'aumentare dei minuti il rating medio dovesse calare.
+              Nella visualizzazione sono identificabili alcuni punti di interesse, enfatizzati da frecce ed etichetta. Il film Zack Snyder's Justice League ad esempio, rappresenta un outlier in quanto ha una durata di 242 minuti.
             </p>     
             <p>L'area dei punti indica il numero di voti ottenuti su IMDb. Le dimensioni sono calcolate in base all'area e non in base al diametro. Le righe grigie rappresentano
               rispettivamente la media dei valori sui due assi, le fasce azzurre rappresentano la deviazione standard dei valori sui due assi, e la retta di colore rosso corrisponde alla retta di correlazione.
@@ -137,7 +155,7 @@
 
       <!-- Terza Visualizzazione -->
       <div class="container viz">
-        <h3 style="text-align: center;"><b>Il rating medio non diminuisce all'aumentare dei minuti</b></h3>
+        <h3 style="text-align: center;"><b>Il rating medio NON diminuisce all'aumentare dei minuti</b></h3>
         <h5 style="text-align: center;">L'area di ciascun punto è proporzionale al numero di voti ottenuti su IMDb. Le dimensioni sono calcolate in base all'area.</h5>
         <div class="row">
           <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
@@ -155,8 +173,8 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h5>Conclusioni</h5>
-            <p>In conclusione, le aspettative iniziali riguardanti l'obiettivo del progetto sono state ribaltate. Inizialmente prospettavamo che all'aumentare dei minuti 
-              di un film il rating peggiorasse ed invece, come si può notare dalla visualizzazione di cui sopra, all'aumentare della durata del film il rating tende a salire leggermente, con una correlazione pari a 0.4.
+            <p>In conclusione, eravamo partiti ipotizzando che ad una durata crescente sarebbe corrisposto un rating medio decrescente ma, come abbiamo potuto osservare dalla visualizzazione di cui sopra, la nostra idea iniziale è stata smentita e ribaltata.
+              All'aumentare della durata del film infatti il rating medio tende a salire leggermente, con una correlazione pari a 0,4.
             </p>
             
           </div>
@@ -173,10 +191,11 @@
 
               <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
               <h5>Note Metodologiche</h5>
-              <p>Il processo di raccolta dati è avvenuto scaricando i dataset dal sito web di IMDb. <br />
-                Il processo di pulizia dei dati è avvenuto tramite analisi effettuate utilizzando le librerie <i>Pandas</i> e <i>Numpy</i>.<br />
-                Per la pulizia dati sono stati tolti dal dataset i film non usciti durante il 2021, con pochi voti ottenuti, precisamente meno di 15000,
-                con durata in minuti pari a 0 e con altri eventuali valori mancanti.<br />
+              <p>Il processo di raccolta dati è avvenuto scaricando i dataset dal sito web ufficiale di IMDb.<br />
+                I dati sono stati modellati ed analizzati tramite l'utilizzo delle librerie <i>Pandas</i> e <i>Numpy</i>.<br />
+                Per quanto riguarda la pulizia dei dati, sono state rimosse dal dataset alcune colonne superflue e altre convertite nella corretta tipologia, per favorirne l'utilizzo.
+                Sono stati rimossi dal dataset i film con durata in minuti pari a 0. Sono poi stati inclusi nel dataset finale solo i film usciti durante il 2021, con almeno 15000 voti ottenuti.
+                A questo punto sono stati gestiti i valori mancanti nelle colonne d'interesse.<br />
                 La prima visualizzazione consiste in una rappresentazione visiva della percentuale di film all'interno del dataset, la seconda rappresenta
                 la distribuzione della durata in minuti dei film del 2021 e del rating medio, dopo averli filtrati, mentre l'ultima visualizzazione è uno scatter plot che
                 mette in relazione la durata in minuti e il rating ottenuto dai film. Le righe grigie rappresentano la media del rating dei film e della durata dei film,
@@ -188,12 +207,12 @@
 
               <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
               <h5>Valutazione qualità</h5>
-              <p>La valutazione della qualità è stata effettuata coinvolgendo 3 persone per le considerazioni euristiche, 6 per il test utente e 12 per il questionario psicometrico. </p>
+              <p>La valutazione della qualità è stata effettuata coinvolgendo 3 individui per le considerazioni euristiche, 6 per il test utente e 12 per la compilazione del questionario psicometrico.</p>
 
               <hr>
 
               <h5>Euristiche considerate</h5>
-              <p>In seguito ai test sottoposti alle 3 persone, sono emerse le seguenti considerazioni: 
+              <p>In seguito alla fase di valutazione euristica, a cui sono state sottoposte 3 persone, sono emerse le seguenti considerazioni: 
                 <ul><li>Le frecce erano inizialmente troppo piccole, sono state quindi rese più grandi.</li>
                   <li>Posizionandosi su un punto dello scatter plot l'informazione riguardante la media dei voti presenta troppe cifre decimali pari a zero.</li>
                   <li>Alcuni punti dello scatter plot sono sovrapposti quando la visualizzazione non è zoommata.</li>
@@ -201,7 +220,7 @@
 
               <hr>
 
-              <h5>Test Utente</h5>
+              <h5>Test utente</h5>
               <p>Per il test utente sono state considerate le seguenti domande:
                 <ul><li>
                   Qual è il valore massimo di rating dei film considerati? (tempo stimato: 11s)
