@@ -13,10 +13,6 @@ test utente: sono quelli che “fanno misure”, si possono testare in maniera q
 
 In generale servono pochi secondi me se si considera una visualizzazione interattiva, allora assomiglia di più ad un’applicazione, e servono più secondi per comprenderla a pieno (fare zoom, applicare filtri, ecc).
 
-![TestUtente](screenshots/2022-01-25-15-55-03.png)
-
 ## Questionario psicometrico [12]
 
 Cabitza-Locoro
-
-![QuestionarioPsicometrico](screenshots/2022-01-25-15-55-15.png)
